@@ -1,7 +1,7 @@
 {
   "npmScope": "flight-workspace",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "angular.json": "*",
@@ -70,6 +70,22 @@
     "logger-lib": {
       "tags": ["domain:shared"]
     },
+    "luggage": {
+      "tags": ["domain:luggage", "type:app"]
+    },
+    "luggage-domain": {
+      "tags": ["domain:luggage", "type:domain-logic"]
+    },
+    "luggage-e2e": {
+      "tags": [],
+      "implicitDependencies": ["luggage"]
+    },
+    "luggage-feature-checkin": {
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    /* "luggage-api": {
+      "tags": ["domain:luggage", "domain:luggage-api-passenger", "type:api"]
+    }, */
     "passenger": {
       "tags": ["domain:passenger", "type:app"]
     },
